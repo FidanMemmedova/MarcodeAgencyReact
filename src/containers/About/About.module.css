@@ -1,0 +1,186 @@
+#whoAreWe {
+    position: relative;
+    padding-top: 160px;
+}
+
+#whoAreWe .contRow {
+    width: 90%;
+    margin: 0 auto;
+    background: rgb(68, 99, 171);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 48px 0;
+}
+
+#whoAreWe .contRow .left {
+    max-width: 35%;
+}
+
+#whoAreWe .contRow .left .title {
+    color: #fff;
+    font-family: Istok Web;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+#whoAreWe .contRow .left p {
+    color: #fff;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 57px;
+}
+
+#whoAreWe .contRow .left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 11px 0;
+    color: #fff;
+    font-family: Istok Web;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background: rgb(241, 89, 88);
+    border-radius: 24px;
+}
+
+#whoAreWe .contRow .right {
+    margin-top: 30px;
+}
+
+#whoAreWe .contRow .right .bigCircle {
+    width: 76px;
+    height: 76px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#whoAreWe .contRow .right .bigCircle .smallCircle {
+    width: 24px;
+    height: 24px;
+    background: rgb(68, 99, 171);
+    border-radius: 50%;
+    position: relative;
+}
+
+#whoAreWe .contRow .right .bigCircle .smallCircle .arrow {
+    position: absolute;
+    top: 13px;
+    transform-origin: top;
+}
+
+#whoAreWe .contRow .right .words a {
+    color: #fff;
+    font-family: Bricolage Grotesque;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+
+#whoAreWe .contRow .right .words .about {
+    transform: translateX(-65px) rotate(-120deg);
+}
+
+#whoAreWe .contRow .right .words .services {
+    transform: translate(-40px, -160px) rotate(-40deg);
+}
+
+#whoAreWe .contRow .right .words .portfolio {
+    transform: translate(85px, -180px) rotate(25deg);
+}
+
+#whoAreWe .contRow .right .words .ourTeam {
+    transform: translate(140px, -40px) rotate(95deg);
+}
+
+#whoAreWe .contRow .right .words .contact {
+    transform: translate(70px, 56px) rotate(155deg);
+}
+
+#whoAreWe .contRow .bigCircle:has(+ .words > .about:hover) .arrow {
+    transform: rotate(60deg);
+}
+
+#whoAreWe .contRow .bigCircle:has(+ .words > .services:hover) .arrow {
+    transform: rotate(150deg);
+}
+
+#whoAreWe .contRow .bigCircle:has(+ .words > .portfolio:hover) .arrow {
+    transform: rotate(200deg);
+}
+
+#whoAreWe .contRow .bigCircle:has(+ .words > .ourTeam:hover) .arrow {
+    transform: rotate(-80deg);
+}
+
+#whoAreWe .contRow .bigCircle:has(+ .words > .contact:hover) .arrow {
+    transform: rotate(-20deg);
+}
+
+#whoAreWe .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background: #eaf0ff;
+    z-index: -1;
+}
+
+@media (max-width: 992px) {
+    #whoAreWe .contRow {
+        flex-direction: column;
+    }
+
+    #whoAreWe .contRow .left {
+        max-width: 70%;
+    }
+
+    #whoAreWe .contRow .right {
+        padding: 120px 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #whoAreWe .contRow {
+        flex-direction: column;
+    }
+
+    #whoAreWe .contRow .left {
+        max-width: 100%;
+    }
+
+    #whoAreWe .contRow .left .btn {
+        display: none;
+    }
+
+    #whoAreWe .contRow .left .title {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #whoAreWe .contRow .left p {
+        padding: 0 20px;
+    }
+
+    #whoAreWe .contRow .right {
+        padding: 50px 0;
+    }
+}
